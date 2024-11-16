@@ -15,5 +15,14 @@ function nextsequence() {
   audio.play();
 }
 $(document).ready(function () {
-  nextsequence();
-});
+    $("#start-btn").on("click", function() {
+        startButtonPressed = true;  
+         if (startButtonPressed){
+         nextsequence();
+         };
+})}
+);
+function playsound(name){
+    var audio = new Audio("sounds/" + randomchosencolour + ".mp3");
+  audio.play();
+}

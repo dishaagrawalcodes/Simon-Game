@@ -14,7 +14,6 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -25,6 +24,7 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
+
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -49,4 +49,14 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.start {
+  background-color: #a1b7bd;
+  color: rgb(20, 3, 34);
+  font-size: 1.5rem;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
