@@ -1,5 +1,11 @@
+const userclickedpattern =[]
 const buttoncolours = ["red", "blue", "green", "yellow"];
 const gamepattern = [];
+$(".btn").on("click",function(){
+    var userchosencolour = $(this).attr("id");
+    console.log (userchosencolour);
+    userclickedpattern.push(userchosencolour)
+})
 function nextsequence() {
     var randomnumber = Math.floor(Math.random() * 4);
   var randomchosencolour = buttoncolours[randomnumber];
@@ -11,3 +17,9 @@ function nextsequence() {
 $(document).ready(function () {
   nextsequence();
 });
+
+$(".btn").on("click",function(){
+    var userchosencolour = $(this).attr("id");
+    console.log (userchosencolour);
+    userclickedpattern.push(userchosencolour)
+})
