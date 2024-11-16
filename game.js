@@ -17,9 +17,3 @@ function nextsequence() {
 $(document).ready(function () {
   nextsequence();
 });
-
-$(".btn").on("click",function(){
-    var userchosencolour = $(this).attr("id");
-    console.log (userchosencolour);
-    userclickedpattern.push(userchosencolour)
-})
